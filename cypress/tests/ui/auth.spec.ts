@@ -94,7 +94,7 @@ describe("User Sign-up and Login", function () {
     cy.getBySel("user-onboarding-dialog-title").should("contain", "Finished");
     cy.getBySel("user-onboarding-dialog-content").should("contain", "You're all set!");
     cy.visualSnapshot("Finished User Onboarding");
-    cy.getBySel("user-onboarding-next").click();
+    cy.getBySel("user-onboarding-next1").click();
 
     cy.getBySel("transaction-list").should("be.visible");
     cy.visualSnapshot("Transaction List is visible after User Onboarding");
